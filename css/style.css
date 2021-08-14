@@ -76,6 +76,10 @@ body {
   font-weight: bold;
 }
 
+.project-link a:visited{
+  color: #ff802b;
+}
+
 .projects-link:hover {
   color: #ff6b08;
 }
