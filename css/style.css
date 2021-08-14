@@ -1,0 +1,435 @@
+body {
+  background-color: #f5f7fa;
+  padding: 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+.container {
+  display: flex;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #fff;
+}
+
+.bio,
+.projects,
+.jobs,
+.education,
+.skills {
+  margin-bottom: 60px;
+}
+
+.right-side {
+  width: 830px;
+  padding-left: 80px;
+  padding-right: 200px;
+  padding-bottom: 68px;
+}
+
+.bio-title {
+  font-size: 45px;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+.bio-occupation {
+  margin-bottom: 27px;
+}
+
+.bio-title {
+  color: #2a2a2a;
+}
+
+.bio-occupation,
+.bio-about {
+  font-size: 14px;
+  line-height: 1.714;
+  color: #595959;
+}
+
+.projects-title,
+.skills-title {
+  margin-bottom: 14px;
+  color: #2a2a2a;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+
+.project {
+  color: #2a2a2a;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.project-link {
+  color: #828282;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.project-link a{
+  color: #ff802b;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.projects-link:hover {
+  color: #ff6b08;
+}
+
+.jobs-title,
+.education-title,
+.skills-title {
+  color: #2a2a2a;
+  font-size: 22px;
+  line-height: 1.091;
+}
+
+.jobs-occupation,
+.education-degree {
+  color: #2a2a2a;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.jobs-time,
+.education-time {
+  color: #828282;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.experience-item {
+  color: #595959;
+  font-size: 14px;
+  line-height: 1.714;
+}
+
+.accent {
+  color: #ff6b08;
+}
+
+.skills-item {
+  color: #595959;
+  font-size: 14px;
+  line-height: 1.714;
+}
+
+.skills-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-item::before {
+  content: '\2022';
+  margin-right: 8px;
+  color: #ff6b08;
+  font-size: 18px;
+}
+
+/* ========= left-side ========= */
+
+.left-side {
+  width: 370px;
+  background-color: #1e2939;
+  color: #fff;
+}
+
+.photo {
+  width: 370px;
+}
+
+.photo,
+.contacts,
+.widget 
+{
+  margin-bottom: 60px;
+}
+
+.contacts,
+.widget {
+  padding-left: 40px;
+}
+
+.contacts-title {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.contacts-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contacts-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.contacts-link {
+  opacity: 0.6;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contacts-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.widget-link {
+  color: #fff;
+  background-color: #ff6b08;
+  padding-top: 20px;
+  padding-right: 43px;
+  padding-bottom: 20px;
+  padding-left: 43px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.widget {
+  padding-left: 40px;
+  min-height: 60px;
+}
+.widget-link {
+  padding-top: 20px;
+  padding-right: 43px;
+  padding-bottom: 20px;
+  padding-left: 43px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+
+  color: #fff;
+  background-color: #ff6b08;
+  box-shadow: 0px 8px 43px 0px rgba(255, 107, 8, 0.588);
+}
+
+.widget-link:hover {
+  box-shadow: 0px 8px 23px 0px #ff6b0896;
+}
+
+.widget-link:active {
+  box-shadow: inset 0px 2px 5px 0px #ff6b0896;
+}
+
+.widget:hover {
+  animation: heartBeat 1s;
+}
+
+.button-link{
+  display: block;
+  margin: 100px 20px;
+  height: 60px;
+  background-color: #ff6b08;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.button-link{
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
+
+.button-link:hover{
+  box-shadow: 0px 4px 20px 5px #ff6b0896;
+}
+
+.contacts {
+  position: relative;
+  animation-name: left-anim;
+  animation-duration: 0.5s;
+}
+
+@keyframes left-anim{
+  0%{
+    right: 1000px;
+  }
+  100%{
+    right: 0px;
+  }
+}
+
+.right-side{
+  position: relative;
+  animation-name: right-anim;
+  animation-duration: 0.5s;
+}
+
+@keyframes right-anim {
+  0%{
+    left: 1000px;
+  }
+  100%{
+    left: 0px;
+  }
+}
+
+.photo{
+  position: relative;
+  animation-name: top-anim;
+  animation-duration: 0.5s;
+}
+
+@keyframes top-anim {
+  0%{
+    bottom: 1000px;
+  }
+  100%{
+    bottom: 0px;
+  }
+}
+
+/* PDF */
+
+/* .button-link{
+  display: none;
+}
+
+.contacts-link {
+  opacity: 1;
+}
+
+body {
+  background-color: #fff;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+.container {
+  display: flex;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #fff;
+}
+
+.bio,
+.projects,
+.jobs,
+.education,
+.skills {
+  margin-bottom: 60px;
+}
+
+.right-side {
+  width: 830px;
+  padding-left: 80px;
+  padding-right: 200px;
+  padding-bottom: 68px;
+}
+
+.bio-title {
+  font-size: 45px;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+.bio-occupation {
+  margin-bottom: 27px;
+}
+
+.bio-title {
+  color: #000;
+}
+
+.bio-occupation,
+.bio-about {
+  font-size: 14px;
+  line-height: 1.714;
+  color: #000;
+}
+
+.projects-title,
+.skills-title {
+  margin-bottom: 14px;
+  color: #000;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.projects-link {
+  color: #220fdc;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.projects-link:hover {
+  color: #ff6b08;
+}
+
+.jobs-title,
+.education-title,
+.skills-title {
+  color: #000;
+  font-size: 22px;
+  line-height: 1.091;
+}
+
+.jobs-occupation,
+.education-degree {
+  color: #000;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.jobs-time,
+.education-time {
+  color: #000;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.experience-item {
+  color: #000;
+  font-size: 14px;
+  line-height: 1.714;
+}
+
+.accent {
+  color: #ff6b08;
+}
+
+.skills-item {
+  color: #000;
+  font-size: 14px;
+  line-height: 1.714;
+}
+
+.project {
+  color: #2a2a2a;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.project-link {
+  color: #000;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.project-link a{
+  color: #ff802b;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: bold;
+} */
