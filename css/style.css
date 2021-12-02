@@ -148,17 +148,20 @@ body {
 
 .photo,
 .contacts,
-.widget 
+.widget,
+.languages 
 {
   margin-bottom: 60px;
 }
 
 .contacts,
-.widget {
+.widget,
+.languages {
   padding-left: 40px;
 }
 
-.contacts-title {
+.contacts-title,
+.languages-title {
   color: #ffffff;
   font-family: Montserrat;
   font-size: 22px;
@@ -166,16 +169,23 @@ body {
   line-height: 24px;
 }
 
-.contacts-list {
+.contacts-list,
+.languages-list {
   list-style: none;
   padding-left: 0;
 }
 
-.contacts-item {
+.contacts-item,
+.languages-item {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   color: #ffffff;
+}
+
+.lang-lvl {
+  font-weight: bold;
+  
 }
 
 .contacts-link {
@@ -258,7 +268,8 @@ body {
   box-shadow: 0px 4px 20px 5px #ff6b0896;
 }
 
-.contacts {
+.contacts,
+.languages {
   position: relative;
   animation-name: left-anim;
   animation-duration: 0.5s;
@@ -310,7 +321,7 @@ body {
 }
 
 .contacts-link {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 body {
@@ -414,19 +425,19 @@ body {
 }
 
 .skills-item {
-  color: #000;
+  color: #000 ;
   font-size: 14px;
   line-height: 1.714;
 }
 
 .project {
-  color: #2a2a2a;
+  color: #000000;
   font-size: 16px;
   line-height: 1.5;
 }
 
 .project-link {
-  color: #000;
+  color: #000 ;
   font-size: 12px;
   line-height: 1;
 }
